@@ -1,6 +1,5 @@
 package step2;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ResultView {
@@ -17,18 +16,18 @@ public class ResultView {
         System.out.println(lottoNum + BUY_TEXT);
     }
 
-    public static void printLottoNum(List<List<Integer>> lottoArray) {
-        for (List<Integer> lotto : lottoArray) {
+    public static void printLottoNum(List<Lotto> lottoArray) {
+        for (Lotto lotto : lottoArray) {
             System.out.println(lotto.toString());
         }
     }
 
-    public static void printDrawResult(int[] resultArray) {
+    public static void printDrawResult(List<Integer> results) {
         System.out.println(RESULT_TEXT);
-        System.out.println(THREE_TEXT + resultArray[3] + COUNT_TEXT);
-        System.out.println(FOUR_TEXT + resultArray[4] + COUNT_TEXT);
-        System.out.println(FIVE_TEXT + resultArray[5] + COUNT_TEXT);
-        System.out.println(SIX_TEXT + resultArray[6] + COUNT_TEXT);
+        System.out.println(THREE_TEXT + results.get(3) + COUNT_TEXT);
+        System.out.println(FOUR_TEXT + results.get(4) + COUNT_TEXT);
+        System.out.println(FIVE_TEXT + results.get(5) + COUNT_TEXT);
+        System.out.println(SIX_TEXT + results.get(6) + COUNT_TEXT);
     }
 
     public static void printPercentage(float percentage) {

@@ -16,9 +16,9 @@ public class ResultView {
         System.out.println(lottoNum + BUY_TEXT);
     }
 
-    public static void printLottoNum(List<Lotto> lottoArray) {
-        for (Lotto lotto : lottoArray) {
-            System.out.println(lotto.toString());
+    public static void printLottoNum(List<Lotto> lottoLists) {
+        for(int i=0; i<lottoLists.size(); i++){
+            System.out.println(lottoLists.get(i).toString());
         }
     }
 

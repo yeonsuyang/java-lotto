@@ -2,6 +2,9 @@ package step2;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import step2.domian.Calculator;
+import step2.domian.Counter;
+import step2.domian.Lotto;
 
 import java.util.List;
 

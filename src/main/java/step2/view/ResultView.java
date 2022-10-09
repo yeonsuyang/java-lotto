@@ -1,4 +1,6 @@
-package step2;
+package step2.view;
+
+import step2.domian.Lotto;
 
 import java.util.List;
 
@@ -17,7 +19,7 @@ public class ResultView {
     }
 
     public static void printLottoNum(List<Lotto> lottoLists) {
-        for(int i=0; i<lottoLists.size(); i++){
+        for (int i = 0; i < lottoLists.size(); i++) {
             System.out.println(lottoLists.get(i).toString());
         }
     }

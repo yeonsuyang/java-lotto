@@ -1,15 +1,15 @@
-package step2;
+package step2.domian;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static step2.Counter.countSameNumber;
+import static step2.domian.Counter.countSameNumber;
 
 public class Lotto {
-     public List<Integer> numbers;
+    public List<Integer> numbers;
 
-     Lotto(List<Integer> numbers) {
+    public Lotto(List<Integer> numbers) {
         this.numbers = numbers;
     }
 

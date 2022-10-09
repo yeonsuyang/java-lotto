@@ -1,4 +1,4 @@
-package step2;
+package step2.domian;
 
 import java.util.List;
 

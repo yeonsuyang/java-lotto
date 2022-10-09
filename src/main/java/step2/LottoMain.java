@@ -1,10 +1,13 @@
 package step2;
 
-import java.util.ArrayList;
+import step2.domian.Lotto;
+import step2.view.InputView;
+import step2.view.ResultView;
+
 import java.util.List;
 
-import static step2.Calculator.*;
-import static step2.LottoMachine.getLotto;
+import static step2.domian.Calculator.*;
+import static step2.domian.LottoMachine.autoLottoLists;
 
 public class LottoMain {
     public static final int LOTTO_PRICE = 1000;
@@ -22,13 +25,5 @@ public class LottoMain {
 
         int revenue = calculateRevenue(results);
         ResultView.printPercentage(calculatePercentage(lottoNum * LOTTO_PRICE, revenue));
-    }
-
-    private static List<Lotto> autoLottoLists(int lottoNum) {
-        List<Lotto> lottoList = new ArrayList<>();
-        for (int i = 0; i < lottoNum; i++) {
-            lottoList.add(getLotto());
-        }
-        return lottoList;
     }
 }

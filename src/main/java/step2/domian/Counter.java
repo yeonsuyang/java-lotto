@@ -1,4 +1,4 @@
-package step2;
+package step2.domian;
 
 public class Counter {
     public static int countSameNumber(Lotto lotto, Lotto lastWinner) {
